@@ -1,0 +1,10 @@
+/* Link styles */
+a {
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: #0056b3; /* Bootstrap primary color with a bit of darkening */
+    color: #0056b3; /* Darker shade for hover effect */
+}

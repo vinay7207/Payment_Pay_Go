@@ -1,0 +1,76 @@
+/* Styles for the Login component with a line between links */
+
+
+.login-container {
+    display: flex; /* Use flex to align items */
+    flex-direction: column; /* Stack elements vertically */
+    height: 100vh;
+/* Set width to 100% for centering */
+    margin: 0 auto; /* Center the container */
+    background-color: #ffffff; /* Change to white for a cleaner look */
+    min-width: 320px; /* Minimum width for better centering */
+    padding: 30px; /* Increase padding for better spacing */
+}
+
+.login-form {
+    background-color: #f7f7f7; /* Change to a light gray for better contrast */
+    padding: 40px; /* Increase padding for better usability */
+    border-radius: 10px; /* Slightly round the corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a more pronounced shadow */
+    width: 350px; /* Increase width for better layout */
+    margin: 0 auto; /* Center the form */
+}
+
+
+.login-form h2 {
+    margin-bottom: 20px;
+    text-align: center; /* Center the heading */
+}
+
+.login-form input {
+    margin-bottom: 15px;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px; /* Add padding for better usability */
+    border: 1px solid #ccc; /* Add border for input fields */
+}
+
+.login-form button {
+    background-color: #0056b3; /* Change to a darker blue for better visibility */
+    color: white;
+    padding: 12px; /* Increase padding for better touch targets */
+    border: none;
+    border-radius: 5px; /* Slightly round the corners */
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s; /* Add transform for hover effect */
+}
+
+.login-form button:hover {
+    background-color: #004494; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+
+.login-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.link-container {
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* Center the links */
+    margin-top: 10px; /* Space above the links */
+    flex-wrap: nowrap; /* Prevent wrapping to ensure all items are in one line */
+}
+
+.link-container a {
+    font-size: 15px;
+    color: #000;
+    margin: 0 10px; /* Add margin between links */
+}
+
+.link-container a:hover {
+    color: #007bff; /* Change hover color to blue */
+}

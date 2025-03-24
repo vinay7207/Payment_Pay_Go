@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    margin-top: 60px; /* Add margin to prevent content from hiding behind the fixed navbar */
+    display: flex; /* Added flex display */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure body takes full height */
+    background-color: #ffffff; /* Change to white for a cleaner look */
+}
+nav {
+    display: flex; /* Ensure nav items are displayed in a flex container */
+    flex-direction: row; /* Align items in a row */
+    background-color: #333; /* Ensure background color is set */
+    padding: 15px 25px; /* Increase padding for better spacing */
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: #333; /* Ensure background color is set */
+    z-index: 1000; /* Ensure it stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+
+nav .navbar-brand {
+  display: inline-block;
+  padding: 14px 16px;
+  color: white;
+  font-size: 1.5em;
+  margin-right: auto; /* Pushes the nav items to the right */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  margin-left: 10px; /* Adjust margin for better alignment */
+}
+
+
+/* Toggle button styles */
+.toggle-button {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 14px;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.toggle-button div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 3px 0;
+}
+
+
+
+
+a {
+  font-size: 18px; /* Adjust font size for better readability */
+  display: block;
+  color: #ffffff; /* Use white for better contrast */
+  text-align: center;
+  padding: 12px 18px; /* Adjust padding for better touch targets */
+  text-decoration: none;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+a:hover {
+  background-color: #0056b3; /* Change hover background color to a darker blue */
+  color: #ffffff; /* Keep text color white on hover */
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  nav ul {
+      display: none; /* Hide navigation items by default */
+      flex-direction: column; /* Stack items vertically */
+      width: 100%;
+      align-items: center; /* Center items horizontally */
+  }
+
+  .Content_main {
+      flex-direction: column; /* Stack content vertically on small screens */
+  }
+
+  nav ul.show {
+      display: flex; /* Show items when toggled */
+  }
+
+  nav ul li {
+      margin-left: 0; /* Remove left margin for vertical layout */
+      margin-bottom: 10px; /* Add spacing between items */
+      text-align: center; /* Center text for better appearance */
+  }
+
+  .navbar-brand {
+      text-align: center;
+      padding: 14px;
+      font-size: 1.5em;
+      color: white;
+  }
+
+  .toggle-button {
+      display: flex; /* Show toggle button on small screens */
+  }
+
+}
+.hero {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3em;
+  color: #333;
+}
+
+.Content_main{
+  margin: 200px 0 0 0 ;
+  display: flex;
+}
+.content {
+    padding: 50px 20px; /* Increase top padding to 30px to avoid hiding behind navbar */
+    text-align: center;
+    flex: 1; /* Allow content to grow and fill space */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack content vertically */
+}
+.left_side{
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+.right_side{
+  display: block;
+  text-align: center;
+  max-width: 700px auto;
+}
+
+
+.footer {
+  background-color: #333; /* Darker footer background */
+  color: white;
+  text-align: center;
+  padding: 20px 0; /* Increase padding for better spacing */
+  position: relative; /* Change from fixed to relative */
+  bottom: 0; /* Move footer to the bottom */
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
